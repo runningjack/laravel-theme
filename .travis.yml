@@ -22,3 +22,6 @@ install:
 script:
   - cd ./packages/platformoncloud/laravel-theme
   - ../../../vendor/bin/phpunit
+
+git:
+  submodules: false
