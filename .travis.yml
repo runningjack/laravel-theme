@@ -1,0 +1,24 @@
+language: php
+
+sudo: true
+
+php:
+  - 7.0
+
+before_script:
+  composer install --dev --prefer-source --no-interaction
+
+install:
+  - cd ../../
+  - composer create-project --prefer-dist laravel/laravel
+  - mkdir ./laravel/packages
+  - mv ./platformoncloud ./laravel/packages
+  - yes | cp -rf ./laravel/packages/platformoncloud/laravel-theme/tests/composer.json ./laravel/
+  - yes | cp -rf ./laravel/packages/platformoncloud/laravel-theme/tests/app.php ./laravel/config/
+  - cd ./laravel
+  - composer update
+  - php artisan vendor:publish --tag="config"
+
+script:
+  - cd ./packages/platformoncloud/laravel-theme
+  - ../../../vendor/bin/phpunit
