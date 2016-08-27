@@ -31,7 +31,7 @@ Please refer to our extensive [Wiki documentation](https://github.com/platformon
 
 ## Support
 
-Feel free to ask for support on the dedicated [Slack](https://platformoncloud.slack.com/messages/theme/) room for answers you may not find in the [Wiki](https://github.com/platformoncloud/laravel-theme/wiki).
+Feel free to ask for support on the dedicated [Slack](https://platformoncloud.slack.com/messages/open-source/) room for answers you may not find in the [Wiki](https://github.com/platformoncloud/laravel-theme/wiki).
 
 ## Changelog
 
