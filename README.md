@@ -11,7 +11,7 @@ The PlatformOnCloud's theme is a theme management package for Laravel with a set
 
 ## Supports
 
-- Laravel 5.0, 5.1, 5.2, 5.3
+- Laravel `5.0`, `5.1`, `5.2`, `5.3`
 - PHP, Blade and Twig template engines
 
 ## Features
